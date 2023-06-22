@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .container-img {
+        position: relative;
+        height: 300px;
+        width: 300px;
+      }
+
+      .Image {
+        display: block;
+        height: 300px;
+        width: 300px;
+        transition: 1s;
+      }
+
+      .overlay {
+        position: absolute;
+        top: 0%;
+        bottom: 0%;
+        left: 0%;
+        right: 0%;
+        height: 100%;
+        width: 100%;
+        opacity: 0;
+        transition: 1s;
+        background-image: linear-gradient(rgb(233, 24, 163), rgb(13, 90, 255));
+      }
+
+      .container-img:hover .overlay {
+        opacity: 1;
+      }
+
+      .container-img:hover .Image {
+        transform: rotate(360deg);
+      }
+
+      .text {
+        position: absolute;
+        text-align: center;
+        color: black;
+        transform: translate(-50%, -50%);
+        top: 50%;
+        left: 50%;
+        font-size: 30px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1
+      style="
+        text-align: center;
+        color: green;
+        font-weight: bolder;
+        font-size: 50px;
+      "
+    >
+      Image Transition Task
+    </h1>
+    <div style="display: flex; margin: 1rem; gap: 1rem">
+      <div class="container-img">
+        <img src="image.jpg" alt="" class="Image" />
+        <div class="overlay">
+          <div class="text">
+            <h2>Pasta</h2>
+          </div>
+        </div>
+      </div>
+      
+  </body>
+</html>
