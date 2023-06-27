@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <img src="./image1.jpeg" alt="" id="buld">
+</body>
+<script>
+    var a=document.getElementById("buld");
+    a.addEventListener('mouseover',()=>{
+        a.src="./image2.jpeg";})
+
+a.addEventListener('mouseout',()=>{
+    a.src="./image1.jpeg";})
+</script>
+</html>
